@@ -11,9 +11,9 @@
 
 Test de normalidad
 
-Hipótesi nula: la población se distribuye de manera **normal** 
+- Hipótesi nula: la población se distribuye de manera **normal** 
 
-Hipótesi alternativa: la población se distribuye de manera **no normal** 
+- Hipótesi alternativa: la población se distribuye de manera **no normal** 
 
 > p-value < 0.05 (0.01) --> **no normal** --> *test no paramétrico* --> kruskal (>2 grupos) / wilcox (2 grupos)
 
@@ -23,9 +23,9 @@ Hipótesi alternativa: la población se distribuye de manera **no normal**
 
 Test de igualdad de varianzas (homocedasticidad)
 
-Hipótesi nula: la población se distribuye con varianzas **no distintas** 
+- Hipótesi nula: la población se distribuye con varianzas **no distintas** 
 
-Hipótesi alternativa: la población se distribuye con varianzas **distintas** 
+- Hipótesi alternativa: la población se distribuye con varianzas **distintas** 
 
 > p-value < 0.05 (0.01) --> **distintas** --> *test no paramétrico* --> kruskal (>2 grupos) / wilcox (2 grupos)
 
