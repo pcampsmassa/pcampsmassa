@@ -10,7 +10,9 @@
 ### Shapiro
 
 Test de normalidad
-
+```
+shapiro.test(??????)
+```
 - Hipótesi nula: la población se distribuye de manera **normal** 
 
 - Hipótesi alternativa: la población se distribuye de manera **no normal** 
@@ -24,7 +26,7 @@ Test de normalidad
 Test de igualdad de varianzas (homocedasticidad)
 
 ```
-leveneTest(y = metadata$variable1, group = metadata$variable2, center = "median")
+leveneTest(y = alphaQ1$variable1, group = alphaQ1$variable2, center = "median")
 ```
 
 - Hipótesi nula: la población se distribuye con **igualdad** de varianzas
@@ -37,14 +39,18 @@ leveneTest(y = metadata$variable1, group = metadata$variable2, center = "median"
 
 ### T-test
 
-### Kruskal-Wallis test
 ```
-kruskal.test(metadata$variable1, metadata$variable2)
+t.test(alphaQ1$chao1)
+```
+### Kruskal-Wallis test
+
+```
+kruskal.test(alphaQ1$variable1, alphaQ1$variable2)
 ```
 ### Mann-Whitney-Wilcoxon test
-
-
-
+```
+wilcox.test(diversity_shannon ~ Contacto_pacientes, data=alphaQ1)
+```
 
 
 
