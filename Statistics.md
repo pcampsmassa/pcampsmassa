@@ -23,13 +23,34 @@ Test de normalidad
 
 Test de igualdad de varianzas (homocedasticidad)
 
-- Hipótesi nula: la población se distribuye con varianzas **no distintas** 
+```
+leveneTest(y = metadata$variable1, group = metadata$variable2, center = "median")
+```
+
+- Hipótesi nula: la población se distribuye con **igualdad** de varianzas
 
 - Hipótesi alternativa: la población se distribuye con varianzas **distintas** 
 
 > p-value < 0.05 (0.01) --> **distintas** --> *test no paramétrico* --> kruskal (>2 grupos) / wilcox (2 grupos)
 
-> p-value > 0.05 (0.99) --> **no distintas** --> *test paramétrico* --> t-test
+> p-value > 0.05 (0.99) --> **igualdad** --> *test paramétrico* --> t-test
+
+### T-test
+
+### Kruskal-Wallis test
+```
+kruskal.test(metadata$variable1, metadata$variable2)
+```
+### Mann-Whitney-Wilcoxon test
+
+
+
+
+
+
+
+
+
 
 
 
