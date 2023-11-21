@@ -11,7 +11,9 @@
 
 Test de normalidad
 ```
-shapiro.test(??????)
+res1 <- lm(chao1 ~ Sample_type, data=alphaDH_RPre)
+summary(res1)
+shapiro.test(res1$residuals)
 ```
 - Hipótesi nula: la población se distribuye de manera **normal** 
 
