@@ -1,12 +1,12 @@
 
-### Calcul de la mitjana
+### Càlcul de la mitjana
 > Crear excels separats si volem fer anàlisi per grups
 ```
 summary(metadataA)
 summary(metadataB)
 ```
 
-### Calcul desviació estàndard
+### Càlcul desviació estàndard
 ```
 apply(metadata,2,sd,na.rm=TRUE)
 ```
