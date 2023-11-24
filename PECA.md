@@ -39,4 +39,16 @@ ggsave(plot=prova2,"serumCD73_Eos_lineal.svg", width = 20, height = 15, units = 
 ```
 ![image](https://github.com/pcampsmassa/pcampsmassa/assets/144921804/6d60dbfe-9970-415a-9878-a83722a3c161)
 
+## Boxplot per grups amb puntets de colors per variable
 
+### IL4 depenent de Eos150 diferenciat per grups
+```
+boxplot_IL4 <- ggplot(metadata_R_PECA_modificado,aes(x=Eos150,y=`IL-4`,fill=Eos150))+geom_boxplot(outlier.shape = NA)+
+    scale_y_continuous(name=expression(IL-4),limits=c(0,50))+
+    scale_x_discrete(name=expression(""),labels=c(expression("<150 eosinophils"),expression(">150 eosinophils")))+
+    geom_jitter(position=position_jitter(0.3),size=3,aes(colour=Fase))+
+    scale_fill_manual(name=c(""),values=c("#ffffff","#ffffff"),labels=c(expression("<150 eosinophils"),expression(">150 eosinophils")))+  scale_colour_manual(name="Fase",values=c("#FB4D3D","#FAC748","#2D93AD"),labels=c("EPOC aguditzador","EPOC estable","EPOC no aguditzador"))+ theme(panel.background = element_rect(fill ="#ffffff"))+
+    theme(panel.border = element_rect(fill = "transparent", color = 1, linewidth = 1))+
+    theme(plot.background = element_rect(fill = "#FFFFFF")); boxplot_IL4
+```
+![image](https://github.com/pcampsmassa/pcampsmassa/assets/144921804/a50f8c4e-d4b2-4226-a37b-5845c4fc01b3)
