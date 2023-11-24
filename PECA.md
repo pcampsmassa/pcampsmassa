@@ -1,5 +1,5 @@
 # PECA
-## Gràfic model lineal
+## Grafic model lineal
 
 ### CD73 esputo - Eosinofilia
 ```
