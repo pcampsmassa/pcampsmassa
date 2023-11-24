@@ -24,4 +24,5 @@ library(caret)
 library(ranacapa)
 library(cluster)
 library(metacoder)
+library(geomtextpath)
 ```
