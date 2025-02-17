@@ -26,3 +26,13 @@ library(cluster)
 library(metacoder)
 library(geomtextpath)
 ```
+```
+library(mixOmics)
+library(readxl)
+library(dplyr)
+library(data.table)
+library(tidyr)
+library(forcats)
+library(tibble)
+library(ggplot2)
+```
