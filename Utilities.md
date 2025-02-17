@@ -10,3 +10,13 @@ summary(metadataB)
 ```
 apply(metadata,2,sd,na.rm=TRUE)
 ```
+
+### Per saber a quin working directory estem
+```
+getwd()
+```
+ens dona un *workingdirectory
+i després posar-lo:
+```
+setwd(*workingdirectory)
+```
